@@ -1,15 +1,16 @@
-<map version="freeplane 1.8.0">
-<!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Insert Inline Image" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1598703942524" LINK="https://sourceforge.net/projects/freeplane/files/addons/insertInlineImage" BACKGROUND_COLOR="#97c7dc">
+<map version="freeplane 1.11.5">
+<!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
+<node TEXT="Insert Inline Image" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1696250858044" LINK="https://sourceforge.net/projects/freeplane/files/addons/insertInlineImage" BACKGROUND_COLOR="#97c7dc">
 <font SIZE="16" BOLD="true" ITALIC="true"/>
 <hook NAME="MapStyle">
     <properties show_icon_for_attributes="true" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
-<stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
+<stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
 <font SIZE="24"/>
-<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
-<stylenode LOCALIZED_TEXT="default" COLOR="#000000" STYLE="fork">
+<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="default" ID="ID_1794887457" COLOR="#000000" STYLE="fork">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1794887457" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="SansSerif" SIZE="12" BOLD="false" ITALIC="false"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details"/>
@@ -21,6 +22,7 @@
 <edge STYLE="hide_edge"/>
 <cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
 </stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.selection" BACKGROUND_COLOR="#4e85f8" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#4e85f8"/>
 <stylenode LOCALIZED_TEXT="styles.ok">
 <icon BUILTIN="button_ok"/>
 </stylenode>
@@ -84,7 +86,7 @@
 <font NAME="Liberation Sans" SIZE="12"/>
 </stylenode>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" COLOR="#000000">
 <font SIZE="20"/>
 </stylenode>
@@ -101,22 +103,21 @@
 <font SIZE="12"/>
 </stylenode>
 </stylenode>
-<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode TEXT="red" COLOR="#ff0300"/>
 <stylenode TEXT="green" COLOR="#00cd00"/>
 </stylenode>
 </stylenode>
 </map_styles>
 </hook>
-<attribute_layout NAME_WIDTH="58.70063622953772 pt" VALUE_WIDTH="58.70063622953772 pt"/>
+<attribute_layout NAME_WIDTH="58.70064 pt" VALUE_WIDTH="104.25 pt"/>
 <attribute NAME="name" VALUE="insertInlineImage"/>
-<attribute NAME="version" VALUE="v1.2"/>
+<attribute NAME="version" VALUE="v1.4"/>
 <attribute NAME="author" VALUE="Volker Börchers, Rickenbroc"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="1.8.6"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
 <attribute NAME="updateUrl" VALUE=""/>
 <richcontent TYPE="NOTE">
-
 <html>
   <head>
     
@@ -149,10 +150,8 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
-<node TEXT="description" POSITION="left" ID="ID_328053546" CREATED="1313183947316" MODIFIED="1403110421625"><richcontent TYPE="NOTE">
-
+</html></richcontent>
+<node TEXT="description" POSITION="top_or_left" ID="ID_328053546" CREATED="1313183947316" MODIFIED="1696241271228"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -168,14 +167,12 @@
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="This add-on is a convenient mean to add images on the fly in your maps. The images can come from :&#xa;- a file from your computer,&#xa;- the clipboard : image file path or a copy (like a screenshot),&#xa;- an url from the internet.&#xa;&#xa;You can resize the display (with a preview pane) and put it in :&#xa;- node core&#xa;- node details&#xa;- note&#xa;- node extension&#xa;&#xa;You can even decorate the image inserted with a link which point wherever you would want." ID="ID_1187826020" CREATED="1313183969546" MODIFIED="1403110633984" BACKGROUND_COLOR="#ffff75" HGAP_QUANTITY="-430.0 px" VSHIFT_QUANTITY="-94.0 px">
+</html></richcontent>
+<node TEXT="This add-on is a convenient tool for adding images on the fly in your maps. The images can come from :&#xa;- a file from your computer,&#xa;- the clipboard : image file path or a copy (like a screenshot),&#xa;- an url from the internet.&#xa;&#xa;You can resize the display (with a preview pane) and put it in :&#xa;- node core&#xa;- node details&#xa;- note&#xa;- node extension&#xa;&#xa;You can even decorate the image inserted with a link which point wherever you would want." ID="ID_1187826020" CREATED="1313183969546" MODIFIED="1696241271876" BACKGROUND_COLOR="#ffff75" HGAP_QUANTITY="-430 px" VSHIFT_QUANTITY="-94 px">
 <font SIZE="16"/>
 </node>
 </node>
-<node TEXT="changes" POSITION="left" ID="ID_309963735" CREATED="1321572498798" MODIFIED="1403110421625"><richcontent TYPE="NOTE">
-
+<node TEXT="changes" POSITION="top_or_left" ID="ID_309963735" CREATED="1321572498798" MODIFIED="1403110421625"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -185,8 +182,7 @@
       Change log of this add-on: append one node for each noteworthy version and put the details for each version into a child node.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="v0.9" FOLDED="true" ID="ID_679770157" CREATED="1321674749784" MODIFIED="1321674755767">
 <node TEXT="initial version" ID="ID_1804184819" CREATED="1321674758481" MODIFIED="1321674762219"/>
 </node>
@@ -218,9 +214,11 @@
 <node TEXT="v1.2" ID="ID_1973009499" CREATED="1598703774880" MODIFIED="1598703935161">
 <node TEXT="by Dimitry&#xa;- fix for Freeplane 1.8.x" ID="ID_1580989474" CREATED="1403107294375" MODIFIED="1403112339656"/>
 </node>
+<node TEXT="v1.4" ID="ID_1048344223" CREATED="1696241157027" MODIFIED="1696250855389">
+<node TEXT="by Rickenbroc&#xa;- bug : html tags removed at insertion in notes and details&#xa;- bug : images replacement not functionnal (html side effect)&#xa;- bug : parameter false passed to getFileChooser(none) in the github version" ID="ID_931369339" CREATED="1696241169840" MODIFIED="1696250237591"/>
 </node>
-<node TEXT="scripts" POSITION="right" ID="ID_788417856" CREATED="1316303875303" MODIFIED="1403110421640" HGAP_QUANTITY="60.0 px" VSHIFT_QUANTITY="40.0 px"><richcontent TYPE="NOTE">
-
+</node>
+<node TEXT="scripts" POSITION="bottom_or_right" ID="ID_788417856" CREATED="1316303875303" MODIFIED="1403110421640" HGAP_QUANTITY="60 px" VSHIFT_QUANTITY="40 px"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -338,10 +336,8 @@
       &#160;&#160;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
-</html>
-</richcontent>
-<node TEXT="${name}.groovy" ID="ID_1651569668" CREATED="1313132482683" MODIFIED="1598703913191"><richcontent TYPE="NOTE">
-
+</html></richcontent>
+<node TEXT="${name}.groovy" ID="ID_1651569668" CREATED="1313132482683" MODIFIED="1696250176867"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -357,9 +353,8 @@
       This script can be used to insert URLs like http://somehost.com/path/test.png. This will lead to a download of the image so <b>network access</b>&#160;could be necessary as well (but it doesn't seem so currently).
     </p>
   </body>
-</html>
-</richcontent>
-<attribute_layout NAME_WIDTH="122.9044571055946 pt" VALUE_WIDTH="122.9044571055946 pt"/>
+</html></richcontent>
+<attribute_layout NAME_WIDTH="188.24999 pt" VALUE_WIDTH="122.90446 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}"/>
 <attribute NAME="menuLocation" VALUE="/main_menu/insert/menu_image"/>
 <attribute NAME="executionMode" VALUE="on_single_node"/>
@@ -371,8 +366,7 @@
 <attribute NAME="execute_scripts_without_network_restriction" VALUE="true"/>
 </node>
 </node>
-<node TEXT="license" POSITION="left" ID="ID_770036552" CREATED="1319814596814" MODIFIED="1403110421625"><richcontent TYPE="NOTE">
-
+<node TEXT="license" POSITION="top_or_left" ID="ID_770036552" CREATED="1319814596814" MODIFIED="1403110421625"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -388,12 +382,10 @@
       The License text has to be entered as a child of the <i>'license'</i>&#160;node, either as plain text or as HTML.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="This add-on is free software: you can redistribute it and/or modify&#xa;it under the terms of the GNU General Public License as published by&#xa;the Free Software Foundation, either version 2 of the License, or&#xa;(at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&#xa;GNU General Public License for more details." ID="ID_1912443753" CREATED="1319814828201" MODIFIED="1319814831174"/>
 </node>
-<node TEXT="preferences.xml" POSITION="left" ID="ID_1267015903" CREATED="1313132482700" MODIFIED="1403110421625"><richcontent TYPE="NOTE">
-
+<node TEXT="preferences.xml" POSITION="top_or_left" ID="ID_1267015903" CREATED="1313132482700" MODIFIED="1403110421625"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -406,13 +398,11 @@
       <font color="#000000" face="SansSerif, sans-serif">Every property in the configuration should receive a default value in <i>default.properties</i>&#160;node.</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node TEXT="default.properties" POSITION="left" ID="ID_1363888784" CREATED="1313132482695" MODIFIED="1403110421625">
-<attribute_layout NAME_WIDTH="84.84076330050374 pt" VALUE_WIDTH="84.84076330050374 pt"/>
+<node TEXT="default.properties" POSITION="top_or_left" ID="ID_1363888784" CREATED="1313132482695" MODIFIED="1403110421625">
+<attribute_layout NAME_WIDTH="84.84076 pt" VALUE_WIDTH="84.84076 pt"/>
 <richcontent TYPE="NOTE">
-
 <html>
   <head>
     
@@ -422,11 +412,9 @@
       These properties play together with the preferences: Each property defined in the preferences should have a default value in the attributes of this node.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node TEXT="translations" POSITION="left" ID="ID_1289155258" CREATED="1313166589769" MODIFIED="1403110421625"><richcontent TYPE="NOTE">
-
+<node TEXT="translations" POSITION="top_or_left" ID="ID_1289155258" CREATED="1313166589769" MODIFIED="1403110421625"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -447,26 +435,24 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="en" ID="ID_306398849" CREATED="1313166602328" MODIFIED="1319485185475">
-<attribute_layout NAME_WIDTH="84.84076330050374 pt" VALUE_WIDTH="84.84076330050374 pt"/>
+<attribute_layout NAME_WIDTH="84.84076 pt" VALUE_WIDTH="84.84076 pt"/>
 <attribute NAME="addons.${name}" VALUE="Insert Inline Image"/>
 <attribute NAME="addons.${name}.url.invalid" VALUE="Invalid URL"/>
 </node>
 <node TEXT="de" ID="ID_1406372206" CREATED="1313166602328" MODIFIED="1319485179345">
-<attribute_layout NAME_WIDTH="84.84076330050374 pt" VALUE_WIDTH="157.29936114633935 pt"/>
+<attribute_layout NAME_WIDTH="84.84076 pt" VALUE_WIDTH="157.29936 pt"/>
 <attribute NAME="addons.${name}" VALUE="Inline-Grafik einfügen"/>
 <attribute NAME="addons.${name}.url.invalid" VALUE="Ungültige URL"/>
 </node>
-<node TEXT="fr" ID="ID_1247799679" CREATED="1313166602328" MODIFIED="1371747210546">
-<attribute_layout NAME_WIDTH="84.84076330050374 pt" VALUE_WIDTH="157.29936114633935 pt"/>
+<node TEXT="fr" ID="ID_1247799679" CREATED="1313166602328" MODIFIED="1696250209717">
+<attribute_layout NAME_WIDTH="127.5 pt" VALUE_WIDTH="157.29936 pt"/>
 <attribute NAME="addons.${name}" VALUE="Image à la volée"/>
 <attribute NAME="addons.${name}.url.invalid" VALUE="URL invalide"/>
 </node>
 </node>
-<node TEXT="deinstall" POSITION="left" ID="ID_26194671" CREATED="1313133194687" MODIFIED="1403111592015" HGAP_QUANTITY="50.0 px" VSHIFT_QUANTITY="-100.0 px"><richcontent TYPE="NOTE">
-
+<node TEXT="deinstall" POSITION="top_or_left" ID="ID_26194671" CREATED="1313133194687" MODIFIED="1403111592015" HGAP_QUANTITY="50 px" VSHIFT_QUANTITY="-100 px"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -476,9 +462,8 @@
       List of files and/or directories to remove on uninstall
     </p>
   </body>
-</html>
-</richcontent>
-<attribute_layout NAME_WIDTH="18.34394882173054 pt" VALUE_WIDTH="204.5350293622955 pt"/>
+</html></richcontent>
+<attribute_layout NAME_WIDTH="18.34395 pt" VALUE_WIDTH="204.53503 pt"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml "/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/${name}.groovy"/>
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/insertInlineImage.png"/>
@@ -486,8 +471,7 @@
 <attribute NAME="delete" VALUE="${installationbase}/resources/images/insertInlineImage-screenshot-1.png"/>
 <attribute NAME="delete" VALUE="${installationbase}/scripts/${name}.groovy"/>
 </node>
-<node TEXT="zips" POSITION="right" ID="ID_482322757" CREATED="1316303875303" MODIFIED="1403110985625" HGAP_QUANTITY="60.0 px" VSHIFT_QUANTITY="-30.0 px"><richcontent TYPE="NOTE">
-
+<node TEXT="zips" POSITION="bottom_or_right" ID="ID_482322757" CREATED="1316303875303" MODIFIED="1403110985625" HGAP_QUANTITY="60 px" VSHIFT_QUANTITY="-30 px"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -521,11 +505,9 @@
       &#160;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node TEXT="images" POSITION="right" ID="ID_723709077" CREATED="1322727983867" MODIFIED="1403110985640" HGAP_QUANTITY="50.0 px" VSHIFT_QUANTITY="-240.0 px"><richcontent TYPE="NOTE">
-
+<node TEXT="images" POSITION="bottom_or_right" ID="ID_723709077" CREATED="1322727983867" MODIFIED="1403110985640" HGAP_QUANTITY="50 px" VSHIFT_QUANTITY="-240 px"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -555,14 +537,12 @@
       Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&#160;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node TEXT="${name}.png" ID="ID_1002402838" CREATED="1322728032545" MODIFIED="1322728042835"/>
 <node TEXT="${name}-icon.png" ID="ID_1000617651" CREATED="1322728032545" MODIFIED="1322728054646"/>
 <node TEXT="${name}-screenshot-1.png" ID="ID_1150955427" CREATED="1322728032545" MODIFIED="1322954458469"/>
 </node>
-<node TEXT="lib" POSITION="right" ID="ID_894274149" CREATED="1403110985593" MODIFIED="1403110985609"><richcontent TYPE="NOTE">
-
+<node TEXT="lib" POSITION="bottom_or_right" ID="ID_894274149" CREATED="1403110985593" MODIFIED="1403110985609"><richcontent TYPE="NOTE">
 <html>
   <head>
     
@@ -596,8 +576,7 @@
       &#160;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </map>

@@ -27,7 +27,6 @@ import org.freeplane.core.resources.ResourceController
 import org.freeplane.features.link.LinkController;
 import org.freeplane.features.mode.Controller
 import org.freeplane.features.url.UrlManager
-
 import java.awt.*;
 
 import java.awt.datatransfer.Clipboard;
@@ -97,7 +96,7 @@ def Icon getIcon(String path) {
 
 JFileChooser createFileChooser() {
     final UrlManager urlManager = Controller.currentModeController.getExtension(UrlManager.class);
-    return urlManager.getFileChooser(false);
+    return urlManager.getFileChooser();
 }
 
 iWidth = 1.0
@@ -702,9 +701,9 @@ if (vars.ok) { //modal functionality
                             toBeReplaced = "<img.*src=['\"]" + match[0] + "[^>]*>"
                         }
 
-                        node.details = (node.detailsText =~ toBeReplaced).replaceFirst(imageTag)
+                        node.detailsText = (node.detailsText =~ toBeReplaced).replaceFirst(imageTag)
                     } else {
-                        node.details = insertTag(node.detailsText, imageTag)
+                        node.detailsText = insertTag(node.detailsText, imageTag)
                     }
                 }
             }
@@ -727,18 +726,18 @@ if (vars.ok) { //modal functionality
             } //if
             if (vars.note.selected) {
                 if (srcMatcher.count > 0) {
-                    def match = node.note =~ srcMatcher[0][1]
+                    def match = node.noteText =~ srcMatcher[0][1]
                     if (match.count > 0) {
                         def toBeReplaced = "(?s)<a[^<]+<img[^>]+src=['\"]" + match[0] + "['\"][^<]+</a>"
-                        pMatch = node.note =~ toBeReplaced
+                        pMatch = node.noteText =~ toBeReplaced
 
                         if (pMatch.count < 1) {
 //if there is no link
                             toBeReplaced = "<img.*src=['\"]" + match[0] + "[^>]*>"
                         }
-                        node.note = (node.note =~ toBeReplaced).replaceFirst(imageTag)
+                        node.noteText = (node.noteText =~ toBeReplaced).replaceFirst(imageTag)
                     } else {
-                        node.note = insertTag(node.note, imageTag)
+                        node.noteText = insertTag(node.noteText, imageTag)
                     }
                 }
             }//if
